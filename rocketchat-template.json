@@ -42,14 +42,10 @@
         "source": {
             "type": "Git",
             "git": {
-                "uri": "https://gitlabappa9.tsi-af.de/tsi/rocketchat.git",
+                "uri": "${GIT_REPOSITORY}",
                 "ref": "master"
             },
-            "contextDir": "/",
-            "sourceSecret":
-                        {
-                                "name": "gitsecret"
-                        }
+            "contextDir": "/"
         },
         "strategy": {
             "type": "Docker",
@@ -410,6 +406,13 @@
         }
     ],
     "parameters": [
+	{
+            "name": "GIT_REPOSITORY",
+            "displayName": "GIT Repository",
+            "description": "Points to your GIT Repository",
+            "required": "true",
+	    "value": "https://github.com/Sifa91/rocketchat-openshift.git"
+        },
         {
             "name": "MEMORY_LIMIT",
             "displayName": "Memory Limit",
