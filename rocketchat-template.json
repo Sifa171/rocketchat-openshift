@@ -281,7 +281,7 @@
                                 "env": [
                                     {
                                         "name": "MONGO_URL",
-                                        "value": "mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DATABASE}"
+                                        "value": "mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${DATABASE_SERVICE_NAME}:27017/${MONGODB_DATABASE}"
                                     },
 {
                                 "name": "Accounts_AvatarStorePath",
