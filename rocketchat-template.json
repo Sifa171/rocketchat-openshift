@@ -410,7 +410,7 @@
             "name": "GIT_REPOSITORY",
             "displayName": "GIT Repository",
             "description": "Points to your GIT Repository",
-            "required": "true",
+            "required": true,
 	    "value": "https://github.com/Sifa91/rocketchat-openshift.git"
         },
         {
